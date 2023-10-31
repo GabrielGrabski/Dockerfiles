@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:10.17
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: inventory
+    ports:
+      - 5441:5432
